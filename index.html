@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h3><a href="#">CookID</a></h3>
+        </div>
+        <nav class="nav-list">
+            <div class="nav-link"><a href="#">Home</a></div>
+            <div class="nav-link"><a href="#">Recipes</a></div>
+            <div class="nav-link"><a href="#">Favorites</a></div>
+            <div class="nav-link"><a href="#">About US</a></div>
+        </nav>
+        <button id="search-button"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+        <div id="search-bar" class="hidden">
+            <input type="text" placeholder="Search...">
+        </div>
+        <button id="person"><i class="fa-solid fa-user fa-2x"></i></button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-image">
+                <h1 class="hero-text">CookID</h1>
+                <h2 class="hero-subtext">Delicious Recipes for <br> Every Occasion</h2>
+                <button class="btn-getstarted">Get Started</button>
+            </div>
+        </section>
+
+        <section class="recipe-categories">
+            <h3>Recipes Categories</h3>
+
+            <div class="categories">
+                <div class="category-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-stroopwafel fa-3x"></i>
+                    </div>
+                    <a href="#">Breakfast</a>
+                </div>
+
+                <div class="category-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-bowl-food fa-3x"></i>
+                    </div>
+                    <a href="#">Lunch</a>
+                </div>
+
+                <div class="category-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-bread-slice fa-3x"></i>
+                    </div>
+                    <a href="#">Dinner</a>
+                </div>
+
+                <div class="category-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-cheese fa-3x"></i>
+                    </div>
+                    <a href="#">Desserts</a>
+                </div>
+
+                <div class="category-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-pizza-slice fa-3x"></i>
+                    </div>
+                    <a href="#">Snacks</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-recipes">
+            <h3>Featured Recipes</h3>
+            <div class="food-cards">
+                <div class="food-card">
+                    <img src="./Assets/img/Feature-img-1.jpg" alt="Food 1">
+                    <div class="card-content">
+                        <h2>Food Title 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Sed malesuada posuere lectus cursus ac arcu.....</p>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="./Assets/img/Feature-img-2.jpg" alt="Food 2">
+                    <div class="card-content">
+                        <h2>Food Title 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Sed malesuada posuere lectus cursus ac arcu.....</p>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <img src="./Assets/img/Feature-img-3.jpg" alt="Food 3">
+                    <div class="card-content">
+                        <h2>Food Title 3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Sed malesuada posuere lectus cursus ac arcu.....</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="upload-tutor">
+            <h2>Upload <br> your Own <br> Recipes</h2>
+            <img src="./Assets/img/upload-recipe.png" alt="">
+        </section>
+
+        <section class="user-testimonial">
+            <h2>Users Testimonial</h2>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <img src="./Assets/img/user-test-1.jpg" alt="User 1" class="user-image">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 4.75</span>
+                    <h3>Wade Warren</h3>
+                    <p>Awesome website and funnel for your business.</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="./Assets/img/user-test-2.jpg" alt="User 2" class="user-image">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 5.0</span>
+                    <h3>Elias Watsica</h3>
+                    <p>Super recommended product. You have to try!</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="./Assets/img/user-test-3.jpg" alt="User 3" class="user-image">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h3>Theresa Conroy</h3>
+                    <p>I cannot believe my eyes, this is real!</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="./Assets/img/user-test-4.jpg" alt="User 4" class="user-image">
+                    <span class="rating"><i class="fa-solid fa-star"></i> 4.95</span>
+                    <h3>Nicole Champlin</h3>
+                    <p>Couldn't agree more to this product!</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="links-sub">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <a href="#">Employee database</a>
+                    <a href="#">Payroll</a>
+                    <a href="#">Absences</a>
+                    <a href="#">Time tracking</a>
+                    <a href="#">Shift planner</a>
+                    <a href="#">Recruiting</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Support</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#">About us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Lift Media</a>
+                </div>
+                <div class="footer-column subscribe">
+                    <h4>Subscribe</h4>
+                    <form action="#">
+                        <input type="email" placeholder="Email address" required>
+                        <button type="submit">→</button>
+                    </form>
+                    <p>Hello, we are Lift Media. Our goal is to maximize the positive effects from revolutionizing how
+                        companies engage with their clients & their team.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>CookID</p>
+                <div class="exlink">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookies</a>
+                </div>
+                <div>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/a3b72db05d.js" crossorigin="anonymous"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
