@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: #FB8500;
+    --main-bg-color: #de7600;
 }
 
 * {
@@ -42,8 +42,17 @@ header a {
     font-weight: bolder;
 }
 
+.nav-link a {
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-link a:hover {
+    text-decoration: underline;
+}
+
 #search-button,
-#person {
+#person,
+#menu-toggle {
     color: white;
     padding: 5px;
     background: none;
@@ -53,8 +62,17 @@ header a {
     transition: all 0.5 ease-in-out;
 }
 
+#menu-toggle {
+    display: none;
+}
+
 #search-button {
     margin-right: 30px;
+}
+
+#menu-toggle:hover {
+    background-color: rgb(255, 255, 255);
+    color: var(--main-bg-color);
 }
 
 #person:hover {
@@ -102,9 +120,7 @@ header a {
 .hero-subtext,
 .btn-getstarted {
     position: relative;
-    /* Pastikan teks berada di atas overlay */
     z-index: 2;
-    /* Pastikan teks berada di atas overlay */
 }
 
 .hero-text,
@@ -133,6 +149,13 @@ header a {
     font-size: 1rem;
     color: white;
     font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-getstarted:hover {
+    background-color: white;
+    color: var(--main-bg-color);
 }
 
 .recipe-categories {
@@ -149,6 +172,7 @@ header a {
 .categories {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 20px 50px;
     gap: 10px;
 }
@@ -238,14 +262,14 @@ header a {
     font-size: 3rem;
     font-weight: bold;
     color: white;
-    padding: 30px 200px ;
+    padding: 30px 200px;
     position: absolute;
 }
 
 .upload-tutor img {
     max-height: 500px;
     display: block;
-    margin: 0 auto;    
+    margin: 0 auto;
     padding: 50px 0;
 }
 
@@ -415,4 +439,64 @@ footer {
 .footer-bottom div img {
     width: 24px;
     height: 24px;
+}
+
+@media (width <=1024px) {
+    .upload-tutor h2 {
+        padding: 30px 50px;
+    }
+
+    .upload-tutor img {
+        padding: 70px 0;
+    }
+
+    .links-sub {
+        margin: 0 0 20px;
+
+    }
+}
+
+@media (width <=768px) {
+    /* search, login menyusul */
+    #search-button, #person { 
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .nav-list.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 2%;
+        top: 10%;
+        z-index: 9999;
+        width: 270px;        
+        background-color: var(--main-bg-color);
+        padding: 20px;
+        gap: 15px;
+        border-radius: 15px;
+    }
+
+    .subscribe {
+        margin: 10px 0 0 0;
+    }
+}
+
+@media (width <=576px) {
+    .upload-tutor h2
+     {
+        font-size: 2rem;
+     }
+
+    .upload-tutor img
+     {
+        width: 100%;
+     }
 }
